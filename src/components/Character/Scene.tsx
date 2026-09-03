@@ -9,7 +9,7 @@ const JOINT = "#4c5a78";
 
 /** A floating framed photo that tilts gently toward the pointer. */
 function PhotoCard() {
-  const texture = useTexture("/profile-photo.png");
+  const texture = useTexture("/my-3d-portfolio/profile-photo.png");
   texture.colorSpace = THREE.SRGBColorSpace;
 
   const turn = useRef<THREE.Group>(null);

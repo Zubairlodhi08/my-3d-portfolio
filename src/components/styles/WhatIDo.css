@@ -1,0 +1,37 @@
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.capability-card {
+  padding: 1.75rem;
+  border-radius: 16px;
+  background: var(--glass-light);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 30px var(--shadow-sm);
+  cursor: default;
+}
+
+.capability-card:hover {
+  background: var(--glass-light-hover);
+  box-shadow: 0 20px 40px var(--shadow-md);
+}
+
+.capability-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+.capability-card p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 780px) {
+  .capability-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,79 @@
+.landing {
+  position: relative;
+  padding-top: clamp(7rem, 14vw, 9rem);
+  padding-bottom: clamp(3rem, 8vw, 5rem);
+  border-top: none;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(2rem, 6vw, 4rem);
+  align-items: center;
+}
+
+.landing-panel {
+  max-width: 30rem;
+}
+
+.landing-code {
+  margin: 0;
+  padding: 1.1rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: var(--screen-dim);
+  white-space: pre-wrap;
+}
+
+.landing-code-line {
+  display: block;
+}
+
+.tok-kw {
+  color: var(--accent-soft);
+}
+
+.tok-str {
+  color: #8fd0c4;
+}
+
+.landing-heading {
+  margin: 1.75rem 0 0;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  max-width: 18ch;
+  color: var(--ink);
+}
+
+.landing-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.landing-canvas {
+  height: clamp(320px, 42vw, 480px);
+}
+
+.landing-canvas canvas {
+  border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+  .landing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-canvas {
+    order: -1;
+    height: 280px;
+  }
+}

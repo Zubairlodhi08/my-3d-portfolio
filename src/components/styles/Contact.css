@@ -1,0 +1,65 @@
+.contact-lead {
+  max-width: 46ch;
+  margin-bottom: 1.5rem;
+}
+
+.contact-email {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 5vw, 2.75rem);
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 0.3rem;
+  margin-bottom: clamp(3rem, 8vw, 5rem);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-email:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.contact-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 1.3rem;
+  color: var(--ink-dim);
+}
+
+.contact-socials a {
+  display: inline-flex;
+  width: 2.4rem;
+  height: 2.4rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-light);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 16px var(--shadow-sm);
+}
+
+.contact-socials a:hover {
+  color: var(--primary);
+  background: var(--glass-light-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px var(--shadow-md);
+}
+
+.contact-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-dim);
+}

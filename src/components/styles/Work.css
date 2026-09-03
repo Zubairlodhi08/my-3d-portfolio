@@ -1,0 +1,95 @@
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.work-card {
+  padding: 1.75rem;
+  border-radius: 16px;
+  background: var(--glass-light);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 30px var(--shadow-sm);
+  cursor: default;
+}
+
+.work-card:hover {
+  background: var(--glass-light-hover);
+  box-shadow: 0 20px 40px var(--shadow-md);
+}
+
+.work-card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.work-card-top h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.work-year {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-dim);
+}
+
+.work-card p {
+  margin: 0.75rem 0 1.1rem;
+  font-size: 0.92rem;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.1rem;
+}
+
+/* Updated chip style to match the 3D purple button look */
+.work-tags .chip {
+  background-color: #6d7cff !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-family: var(--font-mono) !important;
+  padding: 8px 16px !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  box-shadow: 0 4px 0 #4f5bcf !important;
+  border: none !important;
+  transition: transform 0.1s, box-shadow 0.1s !important;
+}
+
+.work-tags .chip:active {
+  transform: translateY(4px) !important;
+  box-shadow: 0 0px 0 #4f5bcf !important;
+}
+
+.work-links {
+  display: flex;
+  gap: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.work-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--primary);
+}
+
+.work-links a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
